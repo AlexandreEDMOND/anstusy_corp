@@ -3,23 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Connexion</title>
+    <title>Anstusy - Connexion</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="login-container">
-        <h2>Connexion</h2>
+        <h1>Connexion à Anstusy</h1>
         <form id="loginForm">
-            <label for="username">ID Utilisateur</label>
-            <input type="text" id="username" name="username" required>
+            <label for="userId">ID utilisateur</label>
+            <input type="text" id="userId" name="userId" required>
 
             <label for="password">Mot de passe</label>
             <input type="password" id="password" name="password" required>
 
-            <button type="submit">Se connecter</button>
-            <p id="errorMessage" class="error-message"></p>
+            <div id="error-message" class="error-message">ID utilisateur ou mot de passe incorrect</div>
+
+            <button type="submit">Connexion</button>
         </form>
+        <a href="11_numbers/numbers.html" class="forgot-password">Mot de passe oublié ?</a>
     </div>
+
     <script src="script.js"></script>
 </body>
 </html>

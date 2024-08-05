@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vérification des Nombres</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Entrez les Nombres</h1>
+        <form id="number-form">
+            <div class="number-input">
+                <img src="image1.jpg" alt="Image 1">
+                <input type="text" placeholder="Entrez un nombre" id="number1">
+                <button type="button" onclick="checkNumber(1)">Vérifier</button>
+            </div>
+            <!-- Répétez ce bloc pour les 11 nombres -->
+            <!-- ... -->
+            <div class="number-input">
+                <img src="img/image11.jpg" alt="Image 11">
+                <input type="text" placeholder="Entrez un nombre" id="number11">
+                <button type="button" onclick="checkNumber(11)">Vérifier</button>
+            </div>
+            <button type="button" class="check-all" onclick="checkAll()">Vérifier tous les nombres</button>
+        </form>
+        <p id="result-message"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
