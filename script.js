@@ -14,7 +14,7 @@ document.getElementById('loginForm').addEventListener('submit', function(e) {
 
     if (password === correctPassword && userId == Username) {
         // Si seul le mot de passe est correct mais pas l'ID utilisateur
-        errorMessage.textContent = "Nous vous demandons l'ID, pas le Username.";
+        errorMessage.textContent = "Nous vous demandons l'ID, pas le Username. Vous avez un problème de connexion";
         errorMessage.style.display = 'block';
     } else if (userId === correctUserId && password === correctPassword) {
         // Si l'ID utilisateur et le mot de passe sont corrects
