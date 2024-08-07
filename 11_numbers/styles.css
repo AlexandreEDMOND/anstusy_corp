@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #000000;
     color: #333;
     display: flex;
     justify-content: center;
@@ -12,11 +12,12 @@ body {
 .container {
     background-color: white;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 100px rgb(198, 195, 204);
     padding: 20px;
-    width: 80%;
-    max-width: 600px;
+    width: 100%;
+    max-width: 800px;
     text-align: center;
+    margin-top: 200px;
 }
 
 h1 {
@@ -75,4 +76,40 @@ h1 {
     margin-top: 20px;
     font-size: 18px;
     font-weight: bold;
+}
+
+/* CSS pour l'image agrandie */
+.image-enlarged {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;  /* Augmentez cette valeur pour agrandir l'image */
+    height: auto;
+    z-index: 1000;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* CSS pour le fond noir derrière l'image agrandie */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 999;
+    display: none;
+}
+
+/* CSS pour la nouvelle image (optionnel, si vous voulez ajouter des styles spécifiques) */
+.new-image {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20%;
+    height: auto;
+    z-index: 1000;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }

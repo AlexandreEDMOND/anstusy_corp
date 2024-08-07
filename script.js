@@ -2,15 +2,17 @@ document.getElementById('loginForm').addEventListener('submit', function(e) {
     e.preventDefault();
     
     // ID utilisateur et mot de passe corrects pour la simulation
-    var correctUserId = "admin";
-    var correctPassword = "123";
+    var correctUserId = "yan_tursunov";
+    var correctPassword = "Xy9vG2zLq";
+
+    var Username = "yan353"
     
     var userId = document.getElementById('userId').value;
     var password = document.getElementById('password').value;
 
     var errorMessage = document.getElementById('error-message');
 
-    if (password === correctPassword && userId !== correctUserId) {
+    if (password === correctPassword && userId == Username) {
         // Si seul le mot de passe est correct mais pas l'ID utilisateur
         errorMessage.textContent = "Nous vous demandons l'ID, pas le Username.";
         errorMessage.style.display = 'block';
